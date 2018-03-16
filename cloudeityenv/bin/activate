@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/Sachin/cloudeity_django/cloudeityenv"
+VIRTUAL_ENV="/home/gd/cloudeity_django/cloudeityenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
