@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cloudeity-a3022",
+  "private_key_id": "7ae24775af026fee415073f592bfb6fa0f2b2c98",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCS5riunzfixatP\nV1Ps38eXhywS21BJBYynkoVpNXxw0hPLdxVHQskGLT7kKYhFdp4fTtPODlxBJyUS\nQLCtEj5UDgTdMxJrNNzGA+KdRc1k3VQbiBSDvIa8UV6Tmt5X3zY7NEwBqWNa0320\nEn0fDqIzx4RCL9YxnwPAexVm3/vjF08h+fgB5S1JtfuypIeLx7AWPnxBVPsn3mTk\nzRBQFHclcS/hS1jKooTBxnpai4YxP7Q5ZNozI/G3iip3DD0ckfa80G6+16bn3WSQ\nKmKA83dFSWFzJq7ugVn5trIRB0IcxZUOa2/W5KYZxMT14sV5EJEXRXImha6pmKcg\nJjLxzQqNAgMBAAECggEABA28MIvu8VBm5MdSOF5OSnwNxb/M0Lh8BwwdBLPAgINn\nKsvk5OBr6asVxxrup3QN27FPQap4sFSpBGdJ27V9/HLkCjKTCxYccGcfOac/LUIt\nLSoKmQ+pMfd/ZRJrDYxtAjlolD/i/bXPxnbw31Bu4Tn+qyJZKTsDRk9H6f+kGpOi\nMx0N684SdvgJlX6sQYmTfdPbhJIV1rVGFsGaModYovNNi7yfQ7xeWYMgg4uVf9ht\nT8aQhisj0t4EWWAiTtwhqPj/94m28v7QxG0I/t1d5/MZRY9MsDHEDJ12D09ZgaRr\nsoLccEyAOnyZ4zVmf+78xBxUqpbOE6D3hqwaUj8PBQKBgQDE1rSa7fxuFl2sbKCt\nlhI5vwXekbJSVA0hWo/4QHAevxS+r+9NNL1AZkCeJo4JodynnG5p/BWXxHkRnzbA\n4oMJ/j/Bm2quc9Z4sey2kZ6Jyove59xodRc4WH7dCahDFFioM2X7E3XgOniwLGsE\nwXnzvfuTQadeUmVGpWp+4QlTGwKBgQC/DbI3XcBnSaPSsSnPqSMgYk2lb9YaSF4X\nM9rsklNMtigSql4G4FeiHG/JUcSJHFzZmRtNw6uIVzV/hQGHVV49NiBTs3KJwgHI\nHCsEN2xXwdBygaKFPjE0JUUyil6VrUKQes/dTNeKchctBS1Vvhu1S/SiHOjtLR0H\nCmBZLMPLdwKBgC1a/8CXR8wiETGS0i9NXiO6NWMElV9NCL1/vZ7JUkxzYRdTOMPE\nfDsjlI4ceiwUBOEGNZbsRBl1ZyQ9WIN3bhRWZmB5LErIXEnxTYb/5NUBO9t/95SG\nLnSIR6ss932FaaxQM5Z39HhXYMnPYlV1M2GLjDVxMlyUhcuSgAh+WASzAoGBAIQ+\nA7TFJO+ZjlbBIHLH3TOGN76iia1JmC8xSoDjy9rWXyiEWm8iDCZ+znWoLoTFaBOK\nIdcS8IF/89zfgK5fTcrK01d8Z3SpIDiWHsRdZJXd5t3Lk2XtJXu1rI8OLegmtGNz\nTrwcezkuPZKA+d9WprE38Q3hOu0og+YirYwsKx6DAoGAaUt5DvJA8C9HrQMBv66p\nojWKgzYHHeKl6hj3/2KILyuNfw8/uTl3AoBaDEb4xHUGqdqm0ADtdG0n8AzgAhSO\nsnPKmACPG4pjIJeloeIBG/aEAbIfGsGYzUa7hM9K1CZD5YnhhhZjTNYKdQdBKgEJ\nqBAmTueYzWDj2O+XlJm3UWA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-mlb0s@cloudeity-a3022.iam.gserviceaccount.com",
+  "client_id": "109486665765693621747",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-mlb0s%40cloudeity-a3022.iam.gserviceaccount.com"
+}

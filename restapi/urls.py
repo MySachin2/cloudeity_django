@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^get-token$', views.get_csrf_token),
     url(r'^uploadFeedback$', views.uploadFeedback,name='uploadFeedback'),
     url(r'^deleteFile$', views.deleteFile,name='deleteFile'),
+    url(r'^testFirebase$', views.testFirebase,name='testFirebase'),
 ]
