@@ -11,6 +11,15 @@ from .functions import pretty_request
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
 from .functions import random_filename
+import firebase_admin
+from firebase_admin import credentials,db
+import os.path
+module_dir = os.path.dirname(__file__)
+file_path = os.path.join(module_dir, 'cloudeity_admin.json')
+cred = credentials.Certificate(file_path)
+firebase_admin.initialize_app(cred, {
+    'databaseURL' : 'https://cloudeity-a3022.firebaseio.com/' }
+)
 
 def index(request):
     json_output = []
@@ -46,6 +55,14 @@ def deleteFile(request):
             default_storage.delete(filename)
             return JsonResponse({"Success": "True"},safe=False)
     return JsonResponse({"Success": "False"},safe=False)
+
+@csrf_exempt
+def testFirebase(request):
+    name = request.POST.get('name','')
+    print("Name" + name)
+    ref = db.reference('users')
+    ref.set({'name' : 'Hello'})
+    return JsonResponse({"Success": "True"},safe=False)
 
 
 class FileUploadView(APIView):
