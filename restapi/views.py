@@ -11,41 +11,8 @@ from .functions import pretty_request
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
 from .functions import random_filename
-import firebase_admin
-from firebase_admin import credentials,db
-import os.path
-module_dir = os.path.dirname(__file__)
-file_path = os.path.join(module_dir, 'cloudeity_admin.json')
-cred = credentials.Certificate(file_path)
-firebase_admin.initialize_app(cred, {
-    'databaseURL' : 'https://cloudeity-a3022.firebaseio.com/' }
-)
 
-def index(request):
-    json_output = []
-    categories = Category.objects.all()
-    for c in categories:
-        json_output.append({'category_name' : c.category_name, 'image_url' : c.image_url})
-    return JsonResponse(json_output,safe=False)
-
-@csrf_exempt
-def uploadFeedback(request):
-    screenshot = request.POST.get('filename','')
-    name = request.POST.get('name','')
-    feedback_type = request.POST.get('feedback_type','')
-    description = request.POST.get('description','')
-    print("Type" + feedback_type)
-    print("name" + name)
-    print("description" + description)
-    if description=='' or name=='' or feedback_type=='':
-        return JsonResponse({"Success": "False"},safe=False)
-    f = Feedback(name=name,type_of_feedback=feedback_type,description=description,screenshot=screenshot)
-    f.save()
-    return JsonResponse({"Success": "True"},safe=False)
-
-def get_csrf_token(request):
-    token = csrf.get_token(request)
-    return JsonResponse({'token': token},safe=False)
+from ssh import connect_to_ssh
 
 @csrf_exempt
 def deleteFile(request):
@@ -57,13 +24,15 @@ def deleteFile(request):
     return JsonResponse({"Success": "False"},safe=False)
 
 @csrf_exempt
-def testFirebase(request):
-    name = request.POST.get('name','')
-    print("Name" + name)
-    ref = db.reference('users')
-    ref.set({'name' : 'Hello'})
-    return JsonResponse({"Success": "True"},safe=False)
-
+def sshFreeServer(request):
+        host = request.POST['ipaddress']
+        domain = request.POST['domain']
+        username = request.POST['username']
+        password = request.POST['password']
+        email = request.POST['email']
+        uid = request.POST['uid']
+        connect_to_ssh(host=host,domain=domain,username=username,password=password,email=email,uid=uid)
+        return JsonResponse({"Success": "True"},safe=False)
 
 class FileUploadView(APIView):
     parser_classes = (MultiPartParser, FormParser)
