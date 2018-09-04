@@ -10,11 +10,8 @@ from firebase_admin import credentials,db
 import os.path
 import hashlib, uuid
 module_dir = os.path.dirname(__file__)
-file_path = os.path.join(module_dir, 'cadmium75_admin.json')
+file_path = os.path.join(module_dir, 'startacloud_admin.json')
 cred = credentials.Certificate(file_path)
-firebase_admin.initialize_app(cred, {
-    'databaseURL' : 'https://cadmium75-5deb5.firebaseio.com/' }
-)
 mRef = db.reference()
 
 def generate_random_string(size):
