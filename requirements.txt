@@ -79,7 +79,7 @@ idna==2.6
 importlib==1.0.4
 ipaddress==1.0.18
 itsdangerous==0.24
-Jinja2==2.7.3
+Jinja2==2.11.3
 jmespath==0.9.3
 jsonpickle==0.9.6
 jws==0.1.3
