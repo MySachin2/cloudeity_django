@@ -153,7 +153,7 @@ sqlparse==0.1.19
 testtools==2.3.0
 traceback2==1.4.0
 ttystatus==0.32
-Twisted==16.0.0
+Twisted==22.1.0
 tzlocal==1.5.1
 Unidecode==1.0.22
 unittest2==1.1.0
