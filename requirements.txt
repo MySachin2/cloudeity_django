@@ -128,7 +128,7 @@ python-dateutil==2.5.0
 python-digitalocean==1.13.2
 python-editor==1.0.3
 python-engineio==2.0.1
-python-jwt==2.0.1
+python-jwt==3.3.4
 python-mimeparse==1.5.1
 python-socketio==1.8.4
 python2==1.2
